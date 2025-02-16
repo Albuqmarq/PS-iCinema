@@ -1,0 +1,72 @@
+{
+    "Movies": {
+        "De Volta Para O Futuro": [
+            {
+                "review": "maneiro",
+                "rating": 10
+            },
+            {
+                "review": "divertido",
+                "rating": 9
+            },
+            {
+                "review": "gostei mt",
+                "rating": 10
+            },
+            {
+                "review": "massa",
+                "rating": 6
+            }
+        ],
+        "Elvis": [
+            {
+                "review": "legal",
+                "rating": 8
+            },
+            {
+                "review": "incrivel",
+                "rating": 10
+            },
+            {
+                "review": "incrivel",
+                "rating": 10
+            }
+        ],
+        "Grease": [
+            {
+                "review": "massa",
+                "rating": 7
+            },
+            {
+                "review": "top",
+                "rating": 1
+            }
+        ],
+        "High School Musical": [
+            {
+                "review": "adoro",
+                "rating": 10
+            }
+        ],
+        "Mamma Mia": [
+            {
+                "review": "top",
+                "rating": 10
+            },
+            {
+                "review": "gostei bastante",
+                "rating": 9
+            },
+            {
+                "review": "mammamia",
+                "rating": 8
+            }
+        ],
+        "O Rei Do Show": [
+            {
+                "review": "brabo",
+                "rating": 8
+            }
+        ]
+    }
+}
