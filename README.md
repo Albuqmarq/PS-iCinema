@@ -4,7 +4,9 @@ classes:
 - informações do usuário;
 - Reserva e escolha de cadeira;
 - cinemas e filme;
-- Um sistema geral do código .
+- Um sistema geral do código.
+
+
 -------- PARTE 2 --------
   classes:
   - review: responsável pelas avaliações dos filmes;
