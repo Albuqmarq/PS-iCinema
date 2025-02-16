@@ -1,5 +1,5 @@
 # Projeto-Software-atualizado
--------- PARTE 1 --------
+PARTE 1 
 classes:
 - informações do usuário;
 - Reserva e escolha de cadeira;
@@ -7,7 +7,7 @@ classes:
 - Um sistema geral do código.
 
 
--------- PARTE 2 --------
+PARTE 2 
   classes:
   - review: responsável pelas avaliações dos filmes;
   - conta: responsável pelas informações do usuário;
