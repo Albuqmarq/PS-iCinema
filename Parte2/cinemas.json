@@ -1,0 +1,87 @@
+{
+    "Centerplex": {
+        "Movies": [
+            "High School Musical",
+            "De Volta Para O Futuro",
+            "Elvis"
+        ],
+        "seat": {
+            "High School Musical": {
+                "A1": "disponível",
+                "A2": "disponível",
+                "A3": "disponível",
+                "A4": "disponível",
+                "A5": "disponível"
+            },
+            "De Volta Para O Futuro": {
+                "B1": "disponível",
+                "B2": "disponível",
+                "B3": "disponível"
+            },
+            "Elvis": {
+                "C1": "disponível",
+                "C2": "disponível",
+                "C3": "disponível",
+                "C4": "disponível"
+            }
+        }
+    },
+    "Cinesystem": {
+        "Movies": [
+            "High School Musical",
+            "Mamma Mia",
+            "Grease"
+        ],
+        "seat": {
+            "High School Musical": {
+                "A1": "disponível",
+                "A2": "disponível",
+                "A3": "disponível",
+                "A4": "disponível",
+                "A5": "disponível"
+            },
+            "Mamma Mia": {
+                "B1": "disponível",
+                "B2": "disponível",
+                "B3": "disponível",
+                "B4": "disponível",
+                "B5": "disponível"
+            },
+            "Grease": {
+                "C1": "disponível",
+                "C2": "disponível",
+                "C3": "disponível",
+                "C4": "disponível",
+                "C5": "disponível"
+            }
+        }
+    },
+    "Kinoplex": {
+        "Movies": [
+            "Elvis",
+            "O Rei Do Show",
+            "Mamma Mia"
+        ],
+        "seat": {
+            "Elvis": {
+                "A1": "disponível",
+                "A2": "disponível",
+                "A3": "disponível",
+                "A4": "disponível"
+            },
+            "O Rei Do Show": {
+                "B1": "disponível",
+                "B2": "disponível",
+                "B3": "disponível",
+                "B4": "disponível",
+                "B5": "disponível"
+            },
+            "Mamma Mia": {
+                "C1": "disponível",
+                "C2": "disponível",
+                "C3": "disponível",
+                "C4": "disponível"
+            }
+        }
+    }
+}
