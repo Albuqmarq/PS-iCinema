@@ -32,7 +32,7 @@ class CinemaManager:
             schedule_obj2=schedule_obj.time()
             current_time_obj = datetime.strptime(current_time, "%H:%M").time()
             valid_schedule=[]
-            if schedule_obj2 > current_time_obj:
+            if schedule_obj2 < current_time_obj:
                 valid_schedule.append((i+1,schedule))
         if not valid_schedule:
                 print("Não há horarios disponíveis para esse filme.")
