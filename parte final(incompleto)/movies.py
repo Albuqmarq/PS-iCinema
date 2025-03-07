@@ -1,7 +1,8 @@
 
 from files import FileManager
+from pagamento import CardPayment,CashPayment,PixPayment
 import uuid
-from datetime import datetime, timedelta, time
+from datetime import datetime, timedelta
 
 
 class CinemaManager:
@@ -16,46 +17,50 @@ class CinemaManager:
         self.users = self.users_manager.load()
     
 
-    def choose_seats(self, cinema_name, movie_index):
+    def choose_seat_schedule(self, cinema_name, movie_index):
         cinema = self.cinemas[cinema_name]
         movie_key = cinema["Movies"][movie_index - 1]
         seats = cinema["seat"][movie_key]
         schedules = cinema['schedule'][movie_key]
         print()
+
+        #Horarios dos filmes
         print(f"Horários disponíveis para {movie_key}:")
-
         current_time = datetime.now().strftime("%H:%M")  
+        current_time_obj = datetime.strptime(current_time, "%H:%M").time()
+        valid_schedule=[]
 
-        for i,schedule in enumerate(schedules,1):
+        for i,schedule in enumerate(schedules):
 
             schedule_obj = datetime.strptime(schedule, "%H:%M") + timedelta(minutes=30)
             schedule_obj2=schedule_obj.time()
-            current_time_obj = datetime.strptime(current_time, "%H:%M").time()
-            valid_schedule=[]
-            if schedule_obj2 < current_time_obj:
+                       
+            if schedule_obj2 > current_time_obj:
                 valid_schedule.append((i+1,schedule))
         if not valid_schedule:
                 print("Não há horarios disponíveis para esse filme.")
                 self.menu(self.user)
                 return
         
-        for i,schedule in valid_schedule:
-                      
-                print(f"[{i}] {schedule}")
+        for i,schedule in valid_schedule:          
+            print(f"[{i}] {schedule}")
         while True:
             try:
                 
-
-                chosen_schedule=int(input("Escolha o horário do filme: \n"))
+                chosen_schedule=int(input("Escolha o horário do filme:\n=> "))
                 valid_choices = [i for i, _ in valid_schedule]
                 if chosen_schedule in valid_choices:
                     selected_schedule = schedules[chosen_schedule - 1]
+                    break
+                elif chosen_schedule==0:
+                    self.menu(self.user)
                     break
                 else:
                     print("Opção inválida. Tente novamente.")
             except ValueError:
                 print("Opção inválida. Tente novamente.")  
-        
+
+        #Cadeiras dos filmes
         print(f"Assentos disponíveis para {movie_key}:")
         rows, cols = 3, 4
         for i in range(rows):
@@ -94,9 +99,10 @@ class CinemaManager:
                     print(f"Assentos escolhidos: {', '.join(chosen_seats)}")
                     print()
 
-                    self.cinemas_manager.save(self.cinemas)
-                    
                     self.payment(total_tickets, cinema_name, movie_key, chosen_seats,selected_schedule)
+                    break
+                elif total_tickets==0:
+                    self.menu(self.user)
                     break
                 else:
                     print(f"A quantidade de ingressos deve ser entre 1 e {max_seats}. Por favor, escolha novamente.")
@@ -111,6 +117,7 @@ class CinemaManager:
         print()
         while True:
             try:
+                print("PARA VOLTAR AO MENU PRESSIONE '0'")
                 cinemas_option = int(input("Qual cinema gostaria de ir?\n[1] Centerplex\n[2] Cinesystem\n[3] Kinoplex\n"))
                 if cinemas_option in [1,2,3]:
                     cinema_name = list(self.cinemas.keys())[cinemas_option - 1]
@@ -128,20 +135,24 @@ class CinemaManager:
                                 print()
                                 print("Boa escolha!")
                                 
-                                self.choose_seats(cinema_name, chosen)
+                                self.choose_seat_schedule(cinema_name, chosen)
+                                return
+                            elif chosen==0:
+                                self.menu(self.user)
                                 return
                             else:
                                 print("Opção inválida. Tente novamente.")
                         except ValueError:
                             print("Entrada inválida.")
                 elif cinemas_option==0:
-                    return
+                    self.menu(self.user)
+                    break
                 else:
                     print("Opção inválida. Tente novamente.")
             except ValueError:
                 print("Entrada inválida. Digite um número.")
     
-    def payment(self, total_tickets, cinema, movie, seats,schedule):
+    def payment(self, total_tickets, cinema, movie, seats, schedule):
         price_per_ticket = 20 
         total_price = total_tickets * price_per_ticket
         
@@ -162,8 +173,27 @@ class CinemaManager:
                 break  
             else:
                 print("Cupom inválido.")
-               
+        while True:
+            try:       
+                payment_method=int(input("Escolha a forma de pagamento:\n[1] Cartão\n[2] Dinheiro\n[3] PIX\n"))
+                if payment_method==1:
+                    payment = CardPayment()
+                    break
+                elif payment_method==2:
+                    payment = CashPayment()
+                    break
+                elif payment_method==3:
+                    payment = PixPayment()
+                    break
+                elif payment_method==0:
+                    self.menu(self.user)
+                    break
+                else:
+                    print("Opção inválida. Tente novamente.")
+            except ValueError:
+                print("Opção inválida. Tente novamente.")               
 
+        payment.process_payment(total_price)
         while True:
             try:
                 
@@ -177,7 +207,11 @@ class CinemaManager:
                     print(f"Aqui está o código do seu ingresso: {ticket}")
                     print("Muito obrigado! Aproveite o filme!")
                     print()
+                    self.cinemas_manager.save(self.cinemas)
                     self.save_user_history(cinema, movie, seats,ticket,schedule)
+                    self.menu(self.user)
+                    break
+                elif paid=='0':
                     self.menu(self.user)
                     break
 
@@ -188,7 +222,7 @@ class CinemaManager:
 
     def save_user_history(self, cinema, movie, seats,ticket,schedule):
        
-        email = self.user.email
+        email = self.user.get_email()
         purchase_time = datetime.now().strftime("%H:%M:%S %d-%m-%Y")
         
     
