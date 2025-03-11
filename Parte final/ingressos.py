@@ -3,14 +3,14 @@ import smtplib
 import uuid
 import qrcode
 from email.message import EmailMessage
-from cryptography.fernet import Fernet
+
 
 
 SMTP_SERVER = "smtp.gmail.com"
 SMTP_PORT = 587
 EMAIL_SENDER = "icinema.ufal@gmail.com" 
 #Me pedir a senha para executar o codigo
-EMAIL_PASSWORD = "bfvj iotl rcaj ixgk"
+EMAIL_PASSWORD = ""
 
 
 if not EMAIL_SENDER or not EMAIL_PASSWORD:
