@@ -1,0 +1,234 @@
+{
+    "gomes": {
+        "name": "Marco",
+        "password": "123",
+        "history": [
+            {
+                "Ticket": "664f0d08",
+                "Cinema": "Kinoplex",
+                "Filme": "Mamma Mia",
+                "Cadeiras": [
+                    "C11"
+                ],
+                "Horario_filme": "23:00",
+                "Horario_compra": "22:47:15 05-03-2025"
+            },
+            {
+                "Ticket": "1f045acb",
+                "Cinema": "Cinesystem",
+                "Filme": "Grease",
+                "Cadeiras": [
+                    "C1",
+                    "C2"
+                ],
+                "Horario_filme": "19:30",
+                "Horario_compra": "15:49:16 06-03-2025"
+            },
+            {
+                "Ticket": "9e6dcfc6",
+                "Cinema": "Cinesystem",
+                "Filme": "High School Musical",
+                "Cadeiras": [
+                    "A2"
+                ],
+                "Horario_filme": "15:30",
+                "Horario_compra": "15:49:51 06-03-2025"
+            },
+            {
+                "Ticket": "edd1dd9c",
+                "Cinema": "Centerplex",
+                "Filme": "High School Musical",
+                "Cadeiras": [
+                    "A1"
+                ],
+                "Horario_filme": "19:00",
+                "Horario_compra": "19:07:31 06-03-2025"
+            },
+            {
+                "Ticket": "26dcf357",
+                "Cinema": "Kinoplex",
+                "Filme": "Mamma Mia",
+                "Cadeiras": [
+                    "C10",
+                    "C11"
+                ],
+                "Horario_filme": "23:00",
+                "Horario_compra": "19:15:15 06-03-2025"
+            },
+            {
+                "Ticket": "fcb3fbc0",
+                "Cinema": "Kinoplex",
+                "Filme": "Mamma Mia",
+                "Cadeiras": [
+                    "C1"
+                ],
+                "Horario_filme": "23:00",
+                "Horario_compra": "20:17:19 06-03-2025"
+            },
+            {
+                "Ticket": "2f1a1c85",
+                "Cinema": "Kinoplex",
+                "Filme": "Elvis",
+                "Cadeiras": [
+                    "A1"
+                ],
+                "Horario_filme": "23:15",
+                "Horario_compra": "22:09:50 06-03-2025"
+            },
+            {
+                "Ticket": "4ad4e640",
+                "Cinema": "Centerplex",
+                "Filme": "High School Musical",
+                "Cadeiras": [
+                    "A2",
+                    "A3"
+                ],
+                "Horario_filme": "14:00",
+                "Horario_compra": "12:10:52 07-03-2025"
+            }
+        ]
+    },
+    "teste@email.com": {
+        "name": "marco",
+        "password": "123",
+        "history": []
+    },
+    "@": {
+        "name": "gomes",
+        "password": "123",
+        "history": []
+    },
+    "marco.albugomes@gmail.com": {
+        "name": "Marco",
+        "password": "123",
+        "history": [
+            {
+                "Ticket": "093d3b0e",
+                "Cinema": "Kinoplex",
+                "Filme": "Mamma Mia",
+                "Cadeiras": [
+                    "C2"
+                ],
+                "Horario_filme": "23:00",
+                "Horario_compra": "19:36:37 10-03-2025",
+                "QR Code": "ingressos/093d3b0e.png"
+            },
+            {
+                "Ticket": "4eb1c627",
+                "Cinema": "Kinoplex",
+                "Filme": "Mamma Mia",
+                "Cadeiras": [
+                    "C3"
+                ],
+                "Horario_filme": "23:00",
+                "Horario_compra": "19:40:27 10-03-2025",
+                "QR Code": "ingressos/4eb1c627.png"
+            },
+            {
+                "Ticket": "150f6b95",
+                "Cinema": "Kinoplex",
+                "Filme": "Mamma Mia",
+                "Cadeiras": [
+                    "C4"
+                ],
+                "Horario_filme": "23:00",
+                "Horario_compra": "19:43:54 10-03-2025",
+                "QR Code": "ingressos/150f6b95.png"
+            },
+            {
+                "Ticket": "f157969c",
+                "Cinema": "Cinesystem",
+                "Filme": "Grease",
+                "Cadeiras": [
+                    "C1"
+                ],
+                "Horario_filme": "19:30",
+                "Horario_compra": "19:49:51 10-03-2025",
+                "QR Code": "ingressos/f157969c.png"
+            },
+            {
+                "Ticket": "f91c2fd1",
+                "Cinema": "Kinoplex",
+                "Filme": "Elvis",
+                "Cadeiras": [
+                    "A3"
+                ],
+                "Horario_filme": "23:20",
+                "Horario_compra": "19:55:21 10-03-2025",
+                "QR Code": "ingressos/f91c2fd1.png"
+            },
+            {
+                "Ticket": "2b18df4d",
+                "Cinema": "Cinesystem",
+                "Filme": "Grease",
+                "Cadeiras": [
+                    "C4"
+                ],
+                "Horario_filme": "22:00",
+                "Horario_compra": "21:13:08 10-03-2025",
+                "QR Code": "ingressos/2b18df4d.png"
+            },
+            {
+                "Ticket": "ad08a740",
+                "Cinema": "Cinesystem",
+                "Filme": "Grease",
+                "Cadeiras": [
+                    "C10"
+                ],
+                "Horario_filme": "22:00",
+                "Horario_compra": "21:22:36 10-03-2025",
+                "QR Code": "ingressos/ad08a740.png"
+            },
+            {
+                "Ticket": "19d4ba01",
+                "Cinema": "Kinoplex",
+                "Filme": "Elvis",
+                "Cadeiras": [
+                    "A7"
+                ],
+                "Horario_filme": "23:20",
+                "Horario_compra": "22:21:22 10-03-2025",
+                "QR Code": "ingressos/19d4ba01.png"
+            },
+            {
+                "Ticket": "4ab840cf",
+                "Cinema": "Kinoplex",
+                "Filme": "Mamma Mia",
+                "Cadeiras": [
+                    "C6"
+                ],
+                "Horario_filme": "23:00",
+                "Horario_compra": "22:24:37 10-03-2025",
+                "QR Code": "ingressos/4ab840cf.png"
+            },
+            {
+                "Ticket": "7b597b04",
+                "Cinema": "Kinoplex",
+                "Filme": "Mamma Mia",
+                "Cadeiras": [
+                    "C5"
+                ],
+                "Horario_filme": "23:00",
+                "Horario_compra": "22:37:53 10-03-2025",
+                "QR Code": "ingressos/7b597b04.png"
+            }
+        ]
+    },
+    "nicolasdealmeidasouza90@gmail.com": {
+        "name": "Nicolas",
+        "password": "1234",
+        "history": [
+            {
+                "Ticket": "269d082b",
+                "Cinema": "Kinoplex",
+                "Filme": "Mamma Mia",
+                "Cadeiras": [
+                    "C8"
+                ],
+                "Horario_filme": "23:00",
+                "Horario_compra": "22:01:53 10-03-2025",
+                "QR Code": "ingressos/269d082b.png"
+            }
+        ]
+    }
+}
