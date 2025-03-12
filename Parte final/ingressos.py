@@ -10,7 +10,7 @@ SMTP_SERVER = "smtp.gmail.com"
 SMTP_PORT = 587
 EMAIL_SENDER = "icinema.ufal@gmail.com" 
 #Me pedir a senha para executar o codigo
-EMAIL_PASSWORD = ""
+EMAIL_PASSWORD = "bfvj iotl rcaj ixgk"
 
 
 if not EMAIL_SENDER or not EMAIL_PASSWORD:
