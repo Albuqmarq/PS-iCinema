@@ -7,8 +7,9 @@ Bem-vindo ao **iCinema**, um sistema de gerenciamento de cinema desenvolvido par
 ## 📌 Requisitos
 
 - **Python 3.x** instalado.
-- Bibliotecas necessárias: `qrcode` e `smtplib` (para envio de e-mails).
+- Bibliotecas necessárias: `qrcode`, `smtplib` e 'pillow' (para envio de e-mails).
 - Um arquivo `users.json` para armazenar os dados dos usuários (será criado automaticamente se não existir).
+- Criar a conta usando APENAS GMAIL para um bom funcionamento do código.
 
 ---
 
