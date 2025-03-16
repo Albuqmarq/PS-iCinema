@@ -4,7 +4,7 @@ import json
 class FileManager:
     def __init__(self, file_path):
         self.file_path = file_path
-
+# Carrega arquivos .json
     def load(self):   
         try:
             with open(self.file_path, "r", encoding="utf-8") as file:
@@ -13,7 +13,7 @@ class FileManager:
             print(f"Arquivo {self.file_path} não encontrado.")
             return {}
        
-
+# Salva arquivos .json
     def save(self, data):
         
         try:
