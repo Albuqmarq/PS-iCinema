@@ -1,7 +1,7 @@
 from conta import Account  
 from movies import CinemaManager
 from review import Review
-
+# Menu principal
 def menu(user):
     while True:
         try:
@@ -54,7 +54,7 @@ def menu(user):
             print("Opção inválida.")
 
 def main_menu():
-    
+# Menu inicial
     while True:
         choice = input("Escolha uma opção:\n[1] Criar conta\n[2] Log-in\n[3] Sair\n=> ")
         if choice == "1":
