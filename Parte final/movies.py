@@ -15,7 +15,7 @@ class CinemaManager:
         self.users_manager = FileManager(self.users_file)
         self.cinemas = self.cinemas_manager.load()
         self.users = self.users_manager.load()
-
+# Função para escolher horários disponíveis dos filmes
     def select_schedule(self, schedules):
        
         current_time = datetime.now().strftime("%H:%M")
@@ -53,7 +53,7 @@ class CinemaManager:
                     print("Opção inválida. Tente novamente.")
             except ValueError:
                 print("Opção inválida. Tente novamente.")
-
+# Função para escolher as cadeiras disoníveis do filme
     def choose_seat(self, cinema_name, movie_index):
         cinema = self.cinemas[cinema_name]
         movie_key = cinema["Movies"][movie_index - 1]
@@ -115,7 +115,7 @@ class CinemaManager:
                     print(f"O número de ingressos deve estar entre 1 e {max_seats}. Escolha novamente.")
             except ValueError:
                 print("Entrada inválida.")
-
+# Função para mostrar cinemas e filmes dispoíveis
     def available_cinemas(self):
         print()
         print("----------------------------------------------------------------------------------")
@@ -157,7 +157,7 @@ class CinemaManager:
                     print("Opção inválida. Tente novamente.")
             except ValueError:
                 print("Entrada inválida. Por favor, insira um número.")
-
+# Função para gerenciar pagamento (interligado com a classe Pagamento)
     def payment(self, total_tickets, cinema, movie, seats, schedule):
         price_per_ticket = 20
         total_price = total_tickets * price_per_ticket
@@ -221,7 +221,7 @@ class CinemaManager:
                     print("Opção inválida. Tente novamente.")
             except ValueError:
                 print("Opção inválida. Tente novamente.")
-
+# Função para organizar e salvar o histórico da compra do usuário
     def save_user_history(self, cinema, movie, seats, ticket, schedule, qr_path):
         email = self.user.get_email()
         purchase_time = datetime.now().strftime("%H:%M:%S %d-%m-%Y")
