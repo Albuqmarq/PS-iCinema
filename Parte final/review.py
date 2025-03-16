@@ -8,8 +8,8 @@ class Review:
     def __init__(self, number,user):
         self.number = number
         self.user=user
-
-    
+        
+#Função para mostrar as reviews dos filmes 
     def show_reviews(self,menu):
         movie = list(movies_options['Movies'].keys())[self.number - 1]
         reviews = movies_options["Movies"].get(movie, [])
@@ -32,6 +32,7 @@ class Review:
             menu(self.user)
             return  
 
+# Função para mostrar filmes disponíveis para avaliação e fazer a avaliação 
     def options(self,menu):
         while True:
             try:
