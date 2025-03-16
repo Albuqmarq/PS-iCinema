@@ -9,7 +9,6 @@ from email.message import EmailMessage
 SMTP_SERVER = "smtp.gmail.com"
 SMTP_PORT = 587
 EMAIL_SENDER = "icinema.ufal@gmail.com" 
-#Me pedir a senha para executar o codigo
 EMAIL_PASSWORD = "bfvj iotl rcaj ixgk"
 
 
@@ -27,7 +26,7 @@ class EmailManager:
         self.__smtp_port = smtp_port
         self.__email_sender = email_sender
         self.__email_password = email_password
-
+# Função que envia email
     def enviar_email(self, destinatario, assunto, corpo, anexo_path=None):
        
         if not destinatario or not assunto or not corpo:
@@ -62,7 +61,7 @@ class IngressoManager(EmailManager):
     def __init__(self):
         
         super().__init__(SMTP_SERVER, SMTP_PORT, EMAIL_SENDER, EMAIL_PASSWORD)
-
+# Gera o qrcode do ingresso
     def gerar_ingresso(self, user, cinema, filme, cadeiras, horario_filme):
         
         if not user or not cinema or not filme or not cadeiras or not horario_filme:
