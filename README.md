@@ -15,51 +15,25 @@ Bem-vindo ao **iCinema**, um sistema de gerenciamento de cinema desenvolvido par
 
 ## 🎥 Funcionalidades
 
-•Cinema and Movie Listings: Displaying listings of cinemas and movies;✅
+### 1️⃣ Cinema and Movie Listings: Displaying listings of cinemas and movies;✅
 
-• Seat Selection and Booking: Enabling users to select seats and book tickets;✅
+### 2️⃣ Seat Selection and Booking: Enabling users to select seats and book tickets;✅
 
-• Payment Processing: Secure processing of ticket payments;✅
+### 3️⃣ Payment Processing: Secure processing of ticket payments;✅
 
-• User Account Management: Creating and managing user profiles;✅
+### 4️⃣ User Account Management: Creating and managing user profiles;✅
 
-• Booking History and Cancellations: Viewing past bookings and managing cancellations;✅
+### 5️⃣ Booking History and Cancellations: Viewing past bookings and managing cancellations;✅
 
-• Promotions and Discounts: Offering and managing discounts and special offers;✅
+### 6️⃣ Promotions and Discounts: Offering and managing discounts and special offers;✅
 
-• Real-Time Seat Availability: Showing real-time availability of seats in cinemas;✅
+### 7️⃣ Real-Time Seat Availability: Showing real-time availability of seats in cinemas;✅
 
-• Mobile Ticketing: Generating mobile tickets for ease of access;✅ (gera o ingresso e envia por email)
+### 8️⃣ Mobile Ticketing: Generating mobile tickets for ease of access;✅ (gera o ingresso e envia por email)
 
-• Customer Reviews and Ratings: Feature for users to rate and review movies;✅
+### 9️⃣ Customer Reviews and Ratings: Feature for users to rate and review movies;✅
 
-• Notification and Alerts: Sending notifications for new releases and booking confirmations.✅ ( apenas confirmação da reserva por email)
-
-
-### 1️⃣ Criação de Conta e Login
-- **Criar conta**: Insira seu nome, e-mail e senha para criar uma conta.
-- **Login**: Faça login com seu e-mail e senha para acessar o sistema.
-
-### 2️⃣ Compra de Ingressos
-- Escolha entre os cinemas disponíveis: **Centerplex, Cinesystem ou Kinoplex**.
-- Selecione o filme desejado e o horário.
-- Escolha seus assentos e finalize a compra.
-- **Métodos de pagamento**:
-  - 💳 Cartão de Crédito/Débito
-  - 💵 Dinheiro
-  - 🔄 PIX
-- Após a compra, um ingresso com **QR Code** será enviado para o seu e-mail.
-
-### 3️⃣ Avaliação de Filmes
-- Após assistir a um filme, você pode deixar uma avaliação e uma nota **(de 0 a 10)**.
-- As avaliações são armazenadas e podem ser visualizadas por outros usuários.
-
-### 4️⃣ Histórico de Compras
-- Visualize seu histórico de compras, incluindo detalhes como **cinema, filme, assentos, horário e código do ingresso**.
-- Cancele reservas (**se permitido pelo tempo limite**).
-
-### 5️⃣ Cupom de Desconto
-- Use o cupom **10CONTO** para ganhar **10% de desconto** na compra de ingressos. 🎟️💰
+### 🔟 Notification and Alerts: Sending notifications for new releases and booking confirmations.✅ ( apenas confirmação da reserva por email)
 
 ---
 
