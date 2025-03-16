@@ -39,7 +39,7 @@ class Account:
     def validate_email(email):
         return "@" in email
 
-   
+   # Função para criar conta
     def create_account(self):
         if not self.validate_email(self.__email):
             print("Email inválido.")
@@ -55,7 +55,7 @@ class Account:
         print()
         self.__menu(self)
 
-    
+    # Função para fazer login
     def login(self):
         if self.__email in users and users[self.__email]['password'] == self.__password:
             self.__name = users[self.__email]['name']
@@ -67,7 +67,7 @@ class Account:
             print()
             return
 
-    
+    # Função para mostrar histórico
     def show_history(self):
         users = user_file.load()
         if self.__email in users:
@@ -91,14 +91,14 @@ class Account:
             print("Usuário não encontrado.")
             print()
 
-   
+   # Função para deleter alguma compra do histórico 
     def delete_history(self, entry_ticket):
         users[self.__email]["history"] = [entry for entry in users[self.__email]["history"] if entry["Ticket"] != entry_ticket]
         user_file.save(users)
         print("Reserva cancelada com sucesso!")
         self.__menu(self)
 
-   
+   # Função do menu da parte de contas do usuário
     def change_data(self):
         users = user_file.load()
         while True:
