@@ -11,7 +11,7 @@ class Account:
         self.__password = password  
         self.__menu = menu  
 
-    
+# Poderia por um @property no lugar de um get ou set
     def get_name(self):
         return self.__name
 
