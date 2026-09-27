@@ -15,25 +15,25 @@ Bem-vindo ao **iCinema**, um sistema de gerenciamento de cinema desenvolvido par
 
 ## 🎥 Funcionalidades
 
-### 1️. Cinema and Movie Listings: Displaying listings of cinemas and movies;✅
+### 1. Catálogo de Cinemas e Filmes: Exibição da programação de cinemas e lista de filmes em cartaz;✅
 
-### 2️. Seat Selection and Booking: Enabling users to select seats and book tickets;✅
+### 2. Seleção de Assentos e Reserva: Permitir que os usuários escolham seus assentos e reservem ingressos;✅
 
-### 3️. Payment Processing: Secure processing of ticket payments;✅
+### 3. Processamento de Pagamentos: Processamento seguro de pagamentos de ingressos;✅
 
-### 4️. User Account Management: Creating and managing user profiles;✅
+### 4. Gerenciamento de Conta do Usuário: Criação e administração de perfis de usuários;✅
 
-### 5️. Booking History and Cancellations: Viewing past bookings and managing cancellations;✅
+### 5. Histórico de Reservas e Cancelamentos: Visualização de reservas anteriores e gerenciamento de cancelamentos;✅
 
-### 6️. Promotions and Discounts: Offering and managing discounts and special offers;✅
+### 6. Promoções e Descontos: Disponibilização e gestão de cupons, descontos e ofertas especiais;✅
 
-### 7️. Real-Time Seat Availability: Showing real-time availability of seats in cinemas;✅
+### 7. Disponibilidade de Assentos em Tempo Real: Exibição em tempo real da ocupação e disponibilidade dos assentos nos cinemas;✅
 
-### 8️. Mobile Ticketing: Generating mobile tickets for ease of access;✅ (gera o ingresso e envia por email)
+### 8. Ingresso Digital no Celular: Geração de ingressos virtuais para fácil acesso (gera o ingresso e envia por e-mail);✅
 
-### 9️. Customer Reviews and Ratings: Feature for users to rate and review movies;✅
+### 9. Avaliações e Opiniões de Clientes: Recurso para os usuários avaliarem e comentarem sobre os filmes;✅
 
-### 10. Notification and Alerts: Sending notifications for new releases and booking confirmations.✅ 
+### 10. Notificações e Alertas: Envio de avisos sobre lançamentos, novidades e confirmações de compra.✅
 
 ---
 
