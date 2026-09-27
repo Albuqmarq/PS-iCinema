@@ -15,25 +15,25 @@ Bem-vindo ao **iCinema**, um sistema de gerenciamento de cinema desenvolvido par
 
 ## 🎥 Funcionalidades
 
-### 1️⃣ Cinema and Movie Listings: Displaying listings of cinemas and movies;✅
+### 1️. Cinema and Movie Listings: Displaying listings of cinemas and movies;✅
 
-### 2️⃣ Seat Selection and Booking: Enabling users to select seats and book tickets;✅
+### 2️. Seat Selection and Booking: Enabling users to select seats and book tickets;✅
 
-### 3️⃣ Payment Processing: Secure processing of ticket payments;✅
+### 3️. Payment Processing: Secure processing of ticket payments;✅
 
-### 4️⃣ User Account Management: Creating and managing user profiles;✅
+### 4️. User Account Management: Creating and managing user profiles;✅
 
-### 5️⃣ Booking History and Cancellations: Viewing past bookings and managing cancellations;✅
+### 5️. Booking History and Cancellations: Viewing past bookings and managing cancellations;✅
 
-### 6️⃣ Promotions and Discounts: Offering and managing discounts and special offers;✅
+### 6️. Promotions and Discounts: Offering and managing discounts and special offers;✅
 
-### 7️⃣ Real-Time Seat Availability: Showing real-time availability of seats in cinemas;✅
+### 7️. Real-Time Seat Availability: Showing real-time availability of seats in cinemas;✅
 
-### 8️⃣ Mobile Ticketing: Generating mobile tickets for ease of access;✅ (gera o ingresso e envia por email)
+### 8️. Mobile Ticketing: Generating mobile tickets for ease of access;✅ (gera o ingresso e envia por email)
 
-### 9️⃣ Customer Reviews and Ratings: Feature for users to rate and review movies;✅
+### 9️. Customer Reviews and Ratings: Feature for users to rate and review movies;✅
 
-### 🔟 Notification and Alerts: Sending notifications for new releases and booking confirmations.✅ ( apenas confirmação da reserva por email)
+### 10. Notification and Alerts: Sending notifications for new releases and booking confirmations.✅ 
 
 ---
 
